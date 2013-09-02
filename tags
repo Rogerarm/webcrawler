@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AppHtmlUrlQueue	workerthread.h	/^		queue<URLNode> AppHtmlUrlQueue;$/;"	m	class:WorkerThread
+HtmlUrl	urlnode.h	/^	string HtmlUrl;$/;"	m	struct:URLNode
+HtmlUrlQueue	webcrawler.h	/^		queue<URLNode> HtmlUrlQueue;$/;"	m	class:webcrawler
+THREADPOOL_H_	threadpool.h	4;"	d
+ThreadPool	threadpool.cpp	/^ThreadPool::ThreadPool()$/;"	f	class:ThreadPool
+ThreadPool	threadpool.cpp	/^ThreadPool::ThreadPool(int maxThreads)$/;"	f	class:ThreadPool
+ThreadPool	threadpool.h	/^class ThreadPool$/;"	c
+URLHash	threadpool.cpp	/^unordered_set <string> ThreadPool::URLHash={};$/;"	m	class:ThreadPool	file:
+URLHash	threadpool.h	/^		static unordered_set <string> URLHash;$/;"	m	class:ThreadPool
+URLNODE_H_	urlnode.h	3;"	d
+URLNode	urlnode.h	/^struct URLNode$/;"	s
+WEBCRAWLER_H_	webcrawler.h	4;"	d
+WORKERTHREAD_H_	workerthread.h	4;"	d
+WorkerThread	workerthread.cpp	/^WorkerThread::WorkerThread(int id , URLNode node):id(id),node(node)$/;"	f	class:WorkerThread
+WorkerThread	workerthread.h	/^class WorkerThread$/;"	c
+analysisComment	webcrawler.cpp	/^void webcrawler::analysisComment(string &strInfor)$/;"	f	class:webcrawler
+assignWork	threadpool.cpp	/^bool ThreadPool::assignWork(WorkerThread *workerThread)$/;"	f	class:ThreadPool
+availableThreads	threadpool.h	/^    		sem_t availableThreads;$/;"	m	class:ThreadPool
+availableWork	threadpool.h	/^    		sem_t availableWork;$/;"	m	class:ThreadPool
+bottomIndex	threadpool.h	/^    		int bottomIndex;$/;"	m	class:ThreadPool
+condCrit	threadpool.h	/^    		pthread_cond_t  condCrit;$/;"	m	class:ThreadPool
+destroyPool	threadpool.cpp	/^void ThreadPool::destroyPool(int maxPollSecs = 2)$/;"	f	class:ThreadPool
+downloadHTMLFile	webcrawler.cpp	/^string webcrawler::downloadHTMLFile(URLNode &node)$/;"	f	class:webcrawler
+executeThis	workerthread.cpp	/^unsigned WorkerThread::executeThis()$/;"	f	class:WorkerThread
+fetchWork	threadpool.cpp	/^bool ThreadPool::fetchWork(WorkerThread **workerArg)$/;"	f	class:ThreadPool
+getURLInfor	webcrawler.cpp	/^void webcrawler:: getURLInfor(string strSource,string &strURL,int &nPort,string &strAttri)$/;"	f	class:webcrawler
+id	workerthread.h	/^		int id;$/;"	m	class:WorkerThread
+incompleteWork	threadpool.h	/^		int incompleteWork;$/;"	m	class:ThreadPool
+initializeThreads	threadpool.cpp	/^void ThreadPool::initializeThreads()$/;"	f	class:ThreadPool
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f
+maxThreads	threadpool.h	/^    		int maxThreads;$/;"	m	class:ThreadPool
+mutexSync	threadpool.h	/^    		static pthread_mutex_t mutexSync;$/;"	m	class:ThreadPool
+mutexWorkCompletion	threadpool.cpp	/^pthread_mutex_t ThreadPool::mutexWorkCompletion = PTHREAD_MUTEX_INITIALIZER;$/;"	m	class:ThreadPool	file:
+mutexWorkCompletion	threadpool.h	/^    		static pthread_mutex_t mutexWorkCompletion;$/;"	m	class:ThreadPool
+nPort	urlnode.h	/^	int    nPort;        \/\/URL port$/;"	m	struct:URLNode
+node	webcrawler.h	/^		URLNode node;$/;"	m	class:webcrawler
+node	workerthread.h	/^		URLNode node;$/;"	m	class:WorkerThread
+queueSize	threadpool.h	/^    		int queueSize;$/;"	m	class:ThreadPool
+strAttri	urlnode.h	/^	string strAttri;     \/\/URL attribute$/;"	m	struct:URLNode
+strName	urlnode.h	/^	string strName;      \/\/URL name$/;"	m	struct:URLNode
+strURL	urlnode.h	/^	string strURL;       \/\/URL$/;"	m	struct:URLNode
+threadExecute	threadpool.cpp	/^void *ThreadPool::threadExecute(void *param)$/;"	f	class:ThreadPool
+topIndex	threadpool.h	/^    		int topIndex;$/;"	m	class:ThreadPool
+webcrawler	webcrawler.cpp	/^webcrawler::webcrawler(URLNode node)$/;"	f	class:webcrawler
+webcrawler	webcrawler.h	/^class webcrawler$/;"	c
+workerQueue	threadpool.h	/^    		vector<WorkerThread *> workerQueue;$/;"	m	class:ThreadPool
+~ThreadPool	threadpool.cpp	/^ThreadPool::~ThreadPool()$/;"	f	class:ThreadPool
+~WorkerThread	workerthread.cpp	/^WorkerThread::~WorkerThread()$/;"	f	class:WorkerThread
+~webcrawler	webcrawler.cpp	/^webcrawler::~webcrawler()$/;"	f	class:webcrawler
